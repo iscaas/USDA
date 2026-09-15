@@ -30,7 +30,7 @@
 **MaizeSeg** is a high-resolution, pixel-annotated RGB image dataset for **vegetation–background segmentation** in **under-canopy maize (*Zea mays L.*) field imagery**. It was built to support reliable nutrient-stress phenotyping under real field conditions — where lighting variability, occlusion, soil exposure, crop residue, and stress-induced necrotic discoloration make vegetation/background separation substantially harder than in above-canopy or lab-based datasets.
 
 <p align="center">
-  <img src="https://github.com/USDA/MaizeSeg/blob/main/MaizeSeg/Assets/Aerial.png?raw=true" width="850" alt="Geographical location and experimental setup used for MaizeSeg data acquisition"/>
+  <img src="Assets/Aerial.png" width="850" alt="Geographical location and experimental setup used for MaizeSeg data acquisition"/>
 </p>
 <p align="center"><em>Geographical location and experimental setup used for MaizeSeg data acquisition. The map indicates the study location in Kansas, USA, while the enlarged panels show the experimental maize plot, nitrogen-treatment row arrangement, and the mobile under-canopy image-acquisition platform.</em></p>
 
@@ -55,7 +55,7 @@ MaizeSeg directly targets this gap with **2,974 pixel-annotated under-canopy ima
 | Public availability | Varies | Varies | ✅ |
 
 <p align="center">
-  <img src="https://github.com/USDA/MaizeSeg/blob/main/MaizeSeg/Assets/Data.png?raw=true" width="850" alt="Representative under-canopy RGB images included in MaizeSeg"/>
+  <img src="Assets/Data.png" width="850" alt="Representative under-canopy RGB images included in MaizeSeg"/>
 </p>
 <p align="center"><em>Representative under-canopy RGB images included in MaizeSeg, spanning nitrogen-sufficient rows, the transition region, and nitrogen-deficient rows under varying illumination, canopy density, leaf occlusion, senescence, soil exposure, residue, and viewing geometry.</em></p>
 
@@ -87,7 +87,7 @@ Images were collected at the **Kansas State University North Farm Agronomy Educa
 Images were collected using a custom self-maneuvered mobile platform designed to move between narrow maize rows. A Canon SX530 HS 16 MP RGB camera was mounted on the platform at an approximately 45° viewing angle to capture under-canopy images from a ground-level perspective, representing the visual conditions encountered by ground-based agricultural robots and field phenotyping systems operating within maize rows.
 
 <p align="center">
-  <img src="https://github.com/USDA/MaizeSeg/blob/main/MaizeSeg/Assets/Image_Acq.png?raw=true" width="850" alt="Under-canopy image acquisition methodology"/>
+  <img src="Assets/Image_Acq.png" width="850" alt="Under-canopy image acquisition methodology"/>
 </p>
 <p align="center"><em>Under-canopy image acquisition methodology. A ground-level RGB camera mounted on the mobile platform captured oblique images while moving between maize rows, at the low-angle perspective represented throughout MaizeSeg.</em></p>
 
@@ -144,31 +144,31 @@ The dataset (images + masks) is hosted externally due to its size.
 A lightweight segmentation model and benchmark suite accompany the dataset. Full model, training, and ablation details will be documented separately — the figures below give a preview.
 
 <p align="center">
-  <img src="https://github.com/USDA/MaizeSeg/blob/main/MaizeSeg/Assets/General_Framework.png?raw=true" width="850" alt="Encoder-decoder segmentation benchmarking framework"/>
+  <img src="Assets/General_Framework.png" width="850" alt="Encoder-decoder segmentation benchmarking framework"/>
 </p>
 <p align="center"><em>Encoder–decoder segmentation benchmarking framework used to evaluate encoder backbones and decoder attention variants on MaizeSeg.</em></p>
 
 <p align="center">
-  <img src="https://github.com/USDA/MaizeSeg/blob/main/MaizeSeg/Assets/MobileVIT_NoAttn.png?raw=true" width="850" alt="Selected MobileViT-S encoder with no-attention decoder architecture"/>
+  <img src="Assets/MobileVIT_NoAttn.png" width="850" alt="Selected MobileViT-S encoder with no-attention decoder architecture"/>
 </p>
 <p align="center"><em>Architecture of the selected MobileViT-S encoder paired with a lightweight no-attention decoder for vegetation-background segmentation.</em></p>
 
 <p align="center">
-  <img src="https://github.com/USDA/MaizeSeg/blob/main/MaizeSeg/Assets/Comparison.png?raw=true" width="850" alt="Comparison of classical vegetation-index methods and the segmentation model"/>
+  <img src="Assets/Comparison.png" width="850" alt="Comparison of classical vegetation-index methods and the segmentation model"/>
 </p>
 <p align="center"><em>Qualitative and quantitative comparison of classical vegetation-index methods against the learning-based segmentation model on representative MaizeSeg test images.</em></p>
 
 <p align="center">
-  <img src="https://github.com/USDA/MaizeSeg/blob/main/MaizeSeg/Assets/Qualitative_Results_Model.png?raw=true" width="850" alt="Qualitative segmentation results on MaizeSeg test images"/>
+  <img src="Assets/Qualitative_Results_Model.png" width="850" alt="Qualitative segmentation results on MaizeSeg test images"/>
 </p>
 <p align="center"><em>Qualitative results of the selected model on representative MaizeSeg test images — input, ground truth, predicted mask, and extracted vegetation.</em></p>
 
 <p align="center">
-  <img src="https://github.com/USDA/MaizeSeg/blob/main/MaizeSeg/Assets/Thresholding_Bg_Fg.png?raw=true" width="850" alt="Effect of vegetation-background segmentation on HSV thresholding"/>
+  <img src="Assets/Thresholding_Bg_Fg.png" width="850" alt="Effect of vegetation-background segmentation on HSV thresholding"/>
 </p>
 <p align="center"><em>Effect of vegetation-background segmentation on downstream HSV thresholding, comparing segmented versus non-segmented inputs.</em></p>
 
 <p align="center">
-  <img src="https://github.com/USDA/MaizeSeg/blob/main/MaizeSeg/Assets/Contamination.png?raw=true" width="850" alt="Effect of vegetation-background masking on stress-associated color detection"/>
+  <img src="Assets/Contamination.png" width="850" alt="Effect of vegetation-background masking on stress-associated color detection"/>
 </p>
 <p align="center"><em>Effect of vegetation-background masking on stress-associated color detection — responses obtained directly from the original RGB image versus after restricting analysis to vegetation pixels.</em></p>
