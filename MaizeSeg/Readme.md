@@ -5,7 +5,7 @@
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/Data%20License-CC--BY--NC--4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 > Paper: *MaizeSeg: An Under-Canopy Maize Image Dataset for Vegetation Background Segmentation Enabling Downstream Stress Phenotyping* (IEEE Access, under review)
-> Dataset DOI: *[to be added upon publication]*
+
 
 ---
 
